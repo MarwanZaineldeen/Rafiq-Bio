@@ -7,8 +7,8 @@ import numpy as np
 import faiss
 import pandas as pd
 
-df_chunks = pd.read_csv(r"D:\Marwan\E-just\Semester 8\Graduation Project 2\Biology\Bio_curriculum_chunks1000_over20.csv")
-index = faiss.read_index(r"D:\Marwan\E-just\Semester 8\Graduation Project 2\Biology\Bio_curriculum_faiss_index_1000_over20.bin")
+df_chunks = pd.read_csv("Bio_curriculum_chunks1000_over20.csv")
+index = faiss.read_index("Bio_curriculum_faiss_index_1000_over20.bin")
 
 Emb_model = SentenceTransformer("intfloat/multilingual-e5-base")
 def score_query(query, threshold=0.79, k=5):
