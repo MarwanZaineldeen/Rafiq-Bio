@@ -1,7 +1,9 @@
-sentence-transformers
-numpy
-faiss-cpu
-pandas
-groq
-streamlit
-requests
+streamlit==1.48.1
+sentence-transformers==3.2.0
+numpy==2.3.2
+faiss-cpu==1.9.0
+pandas==2.3.1
+groq==0.11.0
+requests==2.32.5
+torch==2.4.1
+transformers==4.44.2
